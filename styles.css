@@ -1,0 +1,48 @@
+*{box-sizing:border-box}html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#fff;background:#0A0F24}
+#app{min-height:100vh;display:block;max-width:420px;margin:0 auto;padding:20px}
+.view{display:none;animation:fade .3s ease}
+.view.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.topbar{display:flex;align-items:center;justify-content:center;padding:12px 0}
+.appname{font-weight:700;letter-spacing:.3px}
+.content{display:flex;flex-direction:column;gap:14px}
+.lead{opacity:.95}
+.help{opacity:.95;font-weight:700}
+.helper{background:#101427;border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:12px}
+.helper ul{margin:6px 0 8px 18px}
+.ex{opacity:.9;margin:8px 0 0}
+.hint{color:#B0B4C0}
+textarea{width:100%;min-height:120px;background:#1A1D29;border:1px solid rgba(76,108,255,.35);color:#fff;border-radius:14px;padding:12px;outline:none;resize:vertical}
+textarea:focus{box-shadow:0 0 0 2px rgba(104,66,255,.35);border-color:#6842FF}
+.btn{background:#1A1D29;border:1px solid rgba(255,255,255,.15);color:#fff;border-radius:16px;padding:12px 18px;font-weight:600;cursor:pointer}
+.btn.primary{background:linear-gradient(135deg,#2C6BED,#6842FF);border:none}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.25)}
+.actions{display:flex;gap:10px;justify-content:space-between;margin-top:10px}
+.actions.wrap{flex-wrap:wrap}
+.stepbar{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:10px 0}
+.card.persona{background:#1A1D29;border:1px solid rgba(104,66,255,.35);border-radius:18px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.card.persona h3{font-size:22px;margin:8px 0}
+.card.persona .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card.persona ul{margin:6px 0 0 18px}
+.frase{margin:8px 0 0;padding-left:12px;border-left:3px solid #6842FF;opacity:.95}
+.foot{opacity:.7;margin-top:12px;text-align:center}
+.splash-card{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:88vh;text-align:center}
+.slogan{opacity:.95;margin:6px 0 0;font-weight:600}
+.center{align-items:center;justify-content:center;text-align:center}
+.spinner{width:46px;height:46px;border-radius:50%;border:4px solid rgba(255,255,255,.25);border-top-color:#9B8AFF;animation:spin 1s linear infinite;margin:12px auto}
+@keyframes spin{to{transform:rotate(360deg)}}
+.list{display:flex;flex-direction:column;gap:10px}
+.persona-card{background:#1A1D29;border:1px solid rgba(104,66,255,.35);border-radius:16px;padding:12px;display:flex;align-items:center;justify-content:space-between}
+.persona-card h4{margin:0}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.avatar-wrap{width:72px;height:72px;border-radius:50%;overflow:hidden;border:2px solid rgba(104,66,255,.35);margin-bottom:8px}
+.avatar-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.export-menu{position:fixed;left:20px;bottom:20px;z-index:1000}
+
+/* Modal */
+.modal.hidden{display:none}
+.modal{position:fixed;inset:0;z-index:2000;display:block}
+.modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.5)}
+.modal-card{position:relative;max-width:520px;margin:10vh auto;background:#0F1328;
+  border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px}
+.modal-card h3{margin:0 0 8px 0}
